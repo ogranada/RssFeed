@@ -1,21 +1,22 @@
 package com.example.rssfeed;
 
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.framework.leopardus.fragments.BaseFragment;
 import com.framework.leopardus.interfaces.InjectMethod;
 import com.framework.leopardus.interfaces.InjectView;
 import com.framework.leopardus.utils.InjectableMethods;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
 public class ListaFragment extends BaseFragment {
 
 	@InjectView(id=R.id.btntest)
 	Button b;
+	
+	@InjectView(id=R.id.imageView1)
+	ImageView imagen;
 	
 	@InjectMethod(id=R.id.btntest)
 	public void onBtn1Click(View v){
@@ -24,6 +25,7 @@ public class ListaFragment extends BaseFragment {
 				Toast.makeText(getActivity(), "Click", Toast.LENGTH_LONG).show();
 			}
 		});
+		com.framework.leopardus.utils.ImageLoaderTool.getInstance(this.getActivity()).display("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg", imagen);
 	}
 
 	@InjectMethod(id=R.id.btntest, method=InjectableMethods.OnLongClickListener)

@@ -13,8 +13,8 @@
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_above="@+id/btntest"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/btntest"
@@ -24,5 +24,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:text="Button" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btntest"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>
