@@ -18,7 +18,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.rssfeed.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main" 
+            android:theme="@style/AppTheme.TranslucentActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

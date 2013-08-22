@@ -16,13 +16,15 @@ import com.framework.leopardus.interfaces.injection.InjectMenuItem;
 import com.framework.leopardus.utils.UI;
 
 public class MainActivity extends BaseFragmentsActivity {
-
+	
+	BaseFragment bf = new ListaFragment();
+	BaseFragment bf2 = new ListaFragment();
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		BaseFragment bf = new ListaFragment();
-
 		setActualFragment(bf);
+		((ListaFragment)bf2).setheaderImage("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg");
 		setEnabledMenuOnHome();
 		enableHomeAsButton();
 		getMenu().enableAutoExit();
@@ -40,8 +42,7 @@ public class MainActivity extends BaseFragmentsActivity {
 
 	@InjectMenuItem(stringId = R.string.image, iconId = R.drawable.ico_image)
 	public void onImageItemClick(ListView lv, View v, long id) {
-		Toast.makeText(getBaseContext(), "This is an Image event...",
-				Toast.LENGTH_SHORT).show();
+		setActualFragment(bf2);
 	}
 
 	@InjectMenuItem(stringId = R.string.another, iconId = R.drawable.ic_launcher_another)

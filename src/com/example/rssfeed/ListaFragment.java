@@ -25,7 +25,7 @@ public class ListaFragment extends BaseFragment {
 				Toast.makeText(getActivity(), "Click", Toast.LENGTH_LONG).show();
 			}
 		});
-		com.framework.leopardus.utils.ImageLoaderTool.getInstance(this.getActivity()).display("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg", imagen);
+//		com.framework.leopardus.utils.ImageLoaderTool.getInstance(this.getActivity()).display("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg", imagen);
 	}
 
 	@InjectMethod(id=R.id.btntest, method=InjectableMethods.OnLongClickListener)
@@ -39,6 +39,11 @@ public class ListaFragment extends BaseFragment {
 	
 	public ListaFragment() {
 		super(R.layout.activity_lista_fragment);
+		setFadingActionBarEnabled(true);
+	}
+
+	public void setheaderImage(String string) {
+		setFadingHeaderImage(string);
 	}
 	
 }
