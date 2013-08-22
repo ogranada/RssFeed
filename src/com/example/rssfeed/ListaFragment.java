@@ -6,8 +6,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.framework.leopardus.fragments.BaseFragment;
-import com.framework.leopardus.interfaces.InjectMethod;
-import com.framework.leopardus.interfaces.InjectView;
+import com.framework.leopardus.interfaces.injection.InjectMethod;
+import com.framework.leopardus.interfaces.injection.InjectView;
 import com.framework.leopardus.utils.InjectableMethods;
 
 public class ListaFragment extends BaseFragment {
