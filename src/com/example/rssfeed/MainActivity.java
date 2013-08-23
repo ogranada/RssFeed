@@ -19,20 +19,22 @@ public class MainActivity extends BaseFragmentsActivity {
 	
 	BaseFragment bf = new ListaFragment();
 	BaseFragment bf2 = new ListaFragment();
+	BaseFragment bf3 = new PullToRef();
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		bf3.setParentActivity(this);
 		setActualFragment(bf);
 		((ListaFragment)bf2).setheaderImage("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg");
-		setEnabledMenuOnHome();
 		enableHomeAsButton();
+		setEnabledMenuOnHomeButton();
 		getMenu().enableAutoExit();
 		setOnCloseEvent(new ActivityMethodInterface() {
 
 			@Override
 			public void Method(Activity act, Object... args) {
-				UI.dialogYesNo(getMySelf(), new String(new char[] { 191 })
+				UI.dialogYesNo(MainActivity.this, new String(new char[] { 191 })
 						+ "En realidad desea salir?",
 						InterfacesHelper.getCloseMethod(),
 						InterfacesHelper.getVoidActivityMethod());

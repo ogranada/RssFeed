@@ -5,7 +5,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_lista_fragment">ListaFragment</string>    
+    <string name="title_activity_lista_fragment">ListaFragment</string>
     <string name="another">Another Item</string>
     <string name="image">Image Item</string>
     <string name="dummi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet euismod tortor. Sed quam justo, vulputate vitae luctus et, congue sit amet sapien. Quisque id dictum mi. Cras eleifend orci nec turpis tempus, at accumsan massa dapibus. Sed ac dictum urna. Suspendisse potenti. Nam dignissim eu felis eget dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis augue ligula, fringilla ultrices justo pharetra sed. Fusce arcu libero, feugiat sit amet leo at, feugiat luctus sem. Mauris sit amet sollicitudin mauris. Proin consequat, nisi in dignissim venenatis, odio libero tristique mi, a lobortis odio nunc vitae turpis. Etiam augue mauris, venenatis quis tincidunt et, pharetra ac urna. Duis dapibus pellentesque gravida. Phasellus suscipit mattis placerat.
@@ -37,5 +37,6 @@ Nam ac nisi tempor, placerat velit sed, tincidunt lectus. In eu enim diam. Mauri
 Maecenas nec quam ac erat eleifend ultricies. Etiam ut accumsan elit. Cras tempus non mi vel mollis. Morbi malesuada lectus nunc, eget ullamcorper justo tristique et. Ut scelerisque leo id ullamcorper tincidunt. Duis scelerisque mi sit amet dolor blandit tincidunt. Donec tortor nisi, dictum vel ullamcorper non, laoreet ut nisi. Maecenas varius elit eu libero consectetur pellentesque. Cras quis malesuada arcu. Aliquam gravida, justo in accumsan tempor, dui orci fringilla metus, et sodales mi nibh id nunc. Donec id rhoncus nisl. Nulla facilisi.
 
 Curabitur a orci a felis dignissim ullamcorper vel eu arcu. Mauris eu libero eu nunc sodales posuere. Duis sit amet ipsum a orci aliquam scelerisque. Sed vestibulum vulputate cursus. Suspendisse urna augue, accumsan ut turpis fringilla, eleifend congue felis. Donec ac feugiat turpis. In hac habitasse platea dictumst. Pellentesque tincidunt posuere nisl eu dignissim. Quisque nunc nisl, tempus vitae risus vitae, lacinia venenatis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec risus eu lacus vehicula ullamcorper eget nec ante. Donec sagittis neque vel purus egestas, eu dignissim eros cursus. Praesent pharetra viverra mattis. Ut consequat, lorem in feugiat convallis, mi nisi lobortis turpis, vel dapibus nibh dui ac dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</string>
+    <string name="title_activity_pull_to_ref">PullToRef</string>
 
 </resources>

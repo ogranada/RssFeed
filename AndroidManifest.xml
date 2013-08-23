@@ -10,7 +10,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.rssfeed.MainActivity"
-            android:label="@string/title_activity_main" 
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.TranslucentActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,10 @@
         <activity
             android:name="com.example.rssfeed.ListaFragment"
             android:label="@string/title_activity_lista_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.rssfeed.PullToRef"
+            android:label="@string/title_activity_pull_to_ref" >
         </activity>
     </application>
 
