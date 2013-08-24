@@ -18,15 +18,6 @@ public class PullToRef extends BaseFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = super.onCreateView(inflater, container, savedInstanceState);
-		View vw = v.findViewById(R.id.lyt_pull);
-		getParentActivity().PullToRefreshInit(vw, new OnRefreshListener() {
-			
-			@Override
-			public void onRefreshStarted(View view) {
-				// TODO Auto-generated method stub
-				System.err.println("Hola...");
-			}
-		});
 		return v;
 	}
 

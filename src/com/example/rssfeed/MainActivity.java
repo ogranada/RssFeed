@@ -17,40 +17,43 @@ import com.framework.leopardus.utils.UI;
 
 public class MainActivity extends BaseFragmentsActivity {
 	
-	BaseFragment bf = new ListaFragment();
-	BaseFragment bf2 = new ListaFragment();
-	BaseFragment bf3 = new PullToRef();
+//	BaseFragment bf = new ListaFragment();
+//	BaseFragment bf2 = new ListaFragment();
+//	BaseFragment bf3 = new PullToRef();
+	
+	DrawerTest dt = new DrawerTest();
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		bf3.setParentActivity(this);
-		setActualFragment(bf);
-		((ListaFragment)bf2).setheaderImage("http://blackmarches.wdfiles.com/local--files/red-dragon-king/RedDragon.jpg");
 		enableHomeAsButton();
 		setEnabledMenuOnHomeButton();
 		getMenu().enableAutoExit();
-		setOnCloseEvent(new ActivityMethodInterface() {
 
+		setOnCloseEvent(new ActivityMethodInterface() {
+			
 			@Override
 			public void Method(Activity act, Object... args) {
 				UI.dialogYesNo(MainActivity.this, new String(new char[] { 191 })
-						+ "En realidad desea salir?",
-						InterfacesHelper.getCloseMethod(),
-						InterfacesHelper.getVoidActivityMethod());
+				+ "En realidad desea salir?",
+				InterfacesHelper.getCloseMethod(),
+				InterfacesHelper.getVoidActivityMethod());
 			}
 		});
+
+		setActualFragment(dt);
+		
 	}
 
-	@InjectMenuItem(stringId = R.string.image, iconId = R.drawable.ico_image)
-	public void onImageItemClick(ListView lv, View v, long id) {
-		setActualFragment(bf2);
-	}
+//	@InjectMenuItem(stringId = R.string.image, iconId = R.drawable.ico_image)
+//	public void onImageItemClick(ListView lv, View v, long id) {
+//		setActualFragment(bf2);
+//	}
 
-	@InjectMenuItem(stringId = R.string.another, iconId = R.drawable.ic_launcher_another)
-	public void onAnotherItemClick(ListView lv, View v, long id) {
-		Toast.makeText(getBaseContext(), "This is another event...",
-				Toast.LENGTH_SHORT).show();
-	}
+//	@InjectMenuItem(stringId = R.string.another, iconId = R.drawable.ic_launcher_another)
+//	public void onAnotherItemClick(ListView lv, View v, long id) {
+//		Toast.makeText(getBaseContext(), "This is another event...",
+//				Toast.LENGTH_SHORT).show();
+//	}
 
 }

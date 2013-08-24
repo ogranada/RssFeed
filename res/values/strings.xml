@@ -38,5 +38,6 @@ Maecenas nec quam ac erat eleifend ultricies. Etiam ut accumsan elit. Cras tempu
 
 Curabitur a orci a felis dignissim ullamcorper vel eu arcu. Mauris eu libero eu nunc sodales posuere. Duis sit amet ipsum a orci aliquam scelerisque. Sed vestibulum vulputate cursus. Suspendisse urna augue, accumsan ut turpis fringilla, eleifend congue felis. Donec ac feugiat turpis. In hac habitasse platea dictumst. Pellentesque tincidunt posuere nisl eu dignissim. Quisque nunc nisl, tempus vitae risus vitae, lacinia venenatis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec risus eu lacus vehicula ullamcorper eget nec ante. Donec sagittis neque vel purus egestas, eu dignissim eros cursus. Praesent pharetra viverra mattis. Ut consequat, lorem in feugiat convallis, mi nisi lobortis turpis, vel dapibus nibh dui ac dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</string>
     <string name="title_activity_pull_to_ref">PullToRef</string>
+    <string name="title_activity_drawer_test">DrawerTest</string>
 
 </resources>

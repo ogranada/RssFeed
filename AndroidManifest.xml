@@ -34,6 +34,10 @@
             android:name="com.example.rssfeed.PullToRef"
             android:label="@string/title_activity_pull_to_ref" >
         </activity>
+        <activity
+            android:name="com.example.rssfeed.DrawerTest"
+            android:label="@string/title_activity_drawer_test" >
+        </activity>
     </application>
 
 </manifest>
